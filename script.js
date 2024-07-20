@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.setAttribute('class', 'remove-btn');
+        removeButton.classList.add('remove-btn');
 
         removeButton.onclick = function() {
             const index = tasks.indexOf(taskText);
